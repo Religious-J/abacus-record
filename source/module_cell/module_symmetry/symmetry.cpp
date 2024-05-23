@@ -1510,7 +1510,7 @@ void Symmetry::rhog_symmetry(std::complex<double> *rhogtot,
     // ModuleBase::Memory::record("Symmetry::count_xyz",sizeof(int) *fftnx*fftny*fftnz);
 
     //ADDHERE
-ModuleBase::TITLE("Symmetry", "rhog_symmetry2");
+// ModuleBase::TITLE("Symmetry", "rhog_symmetry2"); 
 
     for (int i = 0; i < fftnx * fftny * fftnz; i++) 
     {
