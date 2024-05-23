@@ -1500,14 +1500,14 @@ void Symmetry::rhog_symmetry(std::complex<double> *rhogtot,
     int(*table_xyz)[48] = new int[fftnx * fftny * fftnz][48];// group information
     int* count_xyz = new int[fftnx * fftny * fftnz];// how many symmetry operations has been covered
 // HEREADD
-    // ModuleBase::Memory::record("Symmetry::rhog_symmetry",sizeof(int) *fftnx*fftny*fftnz*98);
+    ModuleBase::Memory::record("Symmetry::rhog_symmetry",sizeof(int) *fftnx*fftny*fftnz*98);
 
-std::cout << "FFT________________ " << fftnx << " " << fftny << " " << fftnz << " " << std::endl;
+// std::cout << "FFT________________ " << fftnx << " " << fftny << " " << fftnz << " " << std::endl;
 
-    ModuleBase::Memory::record("Symmetry::symflag",sizeof(int) *fftnx*fftny*fftnz);
-    ModuleBase::Memory::record("Symmetry::isymflag",sizeof(int) *fftnx*fftny*fftnz*48);
-    ModuleBase::Memory::record("Symmetry::table_xyz",sizeof(int) *fftnx*fftny*fftnz*48);
-    ModuleBase::Memory::record("Symmetry::count_xyz",sizeof(int) *fftnx*fftny*fftnz);
+    // ModuleBase::Memory::record("Symmetry::symflag",sizeof(int) *fftnx*fftny*fftnz);
+    // ModuleBase::Memory::record("Symmetry::isymflag",sizeof(int) *fftnx*fftny*fftnz*48);
+    // ModuleBase::Memory::record("Symmetry::table_xyz",sizeof(int) *fftnx*fftny*fftnz*48);
+    // ModuleBase::Memory::record("Symmetry::count_xyz",sizeof(int) *fftnx*fftny*fftnz);
 
     //ADDHERE
 ModuleBase::TITLE("Symmetry", "rhog_symmetry2");
